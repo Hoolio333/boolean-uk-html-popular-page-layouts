@@ -1,0 +1,17 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Base */
+
+.top-layout {
+    display: grid;
+    grid-template:
+    "logo search-mail icons" 50px
+    "compose-etc emails quick settings" 100px
+    "meet chat" 
+
+
+}
