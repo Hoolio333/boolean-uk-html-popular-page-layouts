@@ -1,0 +1,71 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+
+body {
+  min-height: 400vh;
+}
+
+/* Top  Layout  */
+
+.layout {
+  display: grid;
+  grid-template:
+    "logo search-mail icons" 50px
+    "compose-etc emails quick-settings" 1fr
+    "meet emails quick-settings" 50px
+    "chat emails quick-settings" 50px /
+    120px 1fr 150px;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: aqua;
+}
+
+.search-mail {
+  grid-area: search-mail;
+  background-color: chartreuse;
+}
+
+.icons {
+  grid-area: icons;
+  background-color: rgb(255, 0, 157);
+}
+
+/* Main Layout  */
+
+.main-layout {
+  display: inline;
+}
+
+.compose-etc {
+  grid-area: compose-etc;
+  background-color: rgb(38, 0, 255);
+}
+
+.emails {
+  grid-area: emails;
+  background-color: rgb(251, 255, 0);
+}
+
+.quick-settings {
+  grid-area: quick-settings;
+  background-color: rgb(255, 8, 0);
+}
+
+.meet {
+  grid-area: meet;
+  background-color: rgb(195, 0, 255);
+}
+
+.chat {
+  grid-area: chat;
+  background-color: rgb(255, 157, 0);
+}
