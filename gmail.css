@@ -81,7 +81,7 @@ body {
     "chat emails quick-settings" 50px /
     120px 1fr 150px;
   gap: 10px;
-  margin: 10px;
+  margin: 10px;}
 }
 
 @media screen and (max-width: 900px) {
@@ -93,7 +93,7 @@ body {
     "chat emails" 50px /
     120px 1fr;
   gap: 10px;
-  margin: 10px;
+  margin: 10px;}
 }
 
 @media screen and (max-width: 750px) {
@@ -105,5 +105,5 @@ body {
     "emails" 50px /
      1fr;
   gap: 10px;
-  margin: 10px;
-}
+  margin: 10px;}
+  }

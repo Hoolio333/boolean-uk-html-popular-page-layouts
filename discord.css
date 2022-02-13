@@ -207,7 +207,7 @@ body {
         "l-blank mchat mchat mchat mchat mchat mchat mchat mchat" 125px
         "l-blank t-mess b-bott b-bott b-bott b-bott bott-ic1 bott-ic2 bott-ic3" 25px /
         40px 250px 25px 25px 40px 40px 40px 40px 40px;
-        gap: 10px;
+        gap: 10px;}
     }
 
    }
@@ -225,5 +225,5 @@ body {
           "mchat mchat mchat mchat mchat mchat mchat mchat" 125px
            /
           40px 250px 25px 25px 40px 40px 40px 40px;
-          gap: 10px;
+          gap: 10px;}
     }

@@ -88,3 +88,41 @@ body {
   grid-area: ad;
   background-color: rgb(61, 199, 103);
 }
+
+/* Responsiveness  */
+
+@media screen and (max-width: 1150px) {
+  .layout {
+    grid-template:
+      "in search icons" 20px
+      "name message linkedin" 40px
+      "pages feed most-v" 1fr
+      "groups ad add-feed" 50px /
+      50px 1fr 70px;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .layout {
+    grid-template:
+      "in search" 20px
+      "name message" 40px
+      "pages feed" 1fr /
+      50px 1fr;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .layout {
+    grid-template:
+      "search" 20px
+      "message" 40px /
+      1fr;
+    padding: 10px;
+    gap: 10px;
+  }
+}
