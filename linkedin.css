@@ -1,0 +1,90 @@
+/* Reset  */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Base  */
+
+body {
+  min-height: 400vh;
+  text-align: center;
+}
+
+.layout {
+  display: grid;
+  grid-template:
+    "in search icons" 20px
+    "name message linkedin" 40px
+    "pages feed most-v" 1fr
+    "groups ad add-feed" 50px /
+    50px 1fr 70px;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* Header  */
+
+.in {
+  grid-area: in;
+  background-color: aqua;
+}
+
+.search {
+  grid-area: search;
+  background-color: rgb(47, 0, 255);
+}
+
+.icons {
+  grid-area: icons;
+  background-color: rgb(255, 0, 0);
+}
+
+/* Main  */
+
+.name {
+  grid-area: name;
+  background-color: rgb(217, 255, 0);
+}
+
+.message {
+  grid-area: message;
+  background-color: rgb(225, 0, 255);
+}
+
+.linkedin {
+  grid-area: linkedin;
+  background-color: rgb(9, 255, 0);
+}
+
+.pages {
+  grid-area: pages;
+  background-color: rgb(255, 0, 191);
+}
+
+.feed {
+  grid-area: feed;
+  background-color: rgb(192, 166, 20);
+}
+
+.most-v {
+  grid-area: most-v;
+  background-color: rgb(60, 36, 141);
+}
+
+.groups {
+  grid-area: groups;
+  background-color: rgb(29, 107, 36);
+}
+
+.add-feed {
+  grid-area: add-feed;
+  background-color: rgb(95, 12, 16);
+}
+
+/* Footer  */
+
+.ad {
+  grid-area: ad;
+  background-color: rgb(61, 199, 103);
+}
