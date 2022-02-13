@@ -8,7 +8,8 @@
 }
 
 body {
-  min-height: 400vh;
+  min-height: 100vh;
+  
 }
 
 .layout {
@@ -25,8 +26,10 @@ body {
     "l-blank staff mchat mchat mchat mchat mchat mchat mchat mchat" 125px
     "l-blank user-info t-mess b-bott b-bott b-bott b-bott bott-ic1 bott-ic2 bott-ic3" 25px /
     40px 90px 250px 25px 25px 40px 40px 40px 40px 40px;
-  gap: 10px;
+    gap: 10px;
 }
+
+/* Header  */
 
 .logo {
   grid-area: logo;
@@ -72,6 +75,8 @@ body {
   grid-area: top-ic5;
   background-color: rgb(0, 174, 255);
 }
+
+/* Main  */
 
 .l-ic1 {
   grid-area: l-ic1;
@@ -137,6 +142,8 @@ body {
   background-color: chocolate;
 }
 
+/* Footer  */
+
 .user-info {
   grid-area: user-info;
   background-color: rgb(142, 223, 155);
@@ -166,3 +173,57 @@ body {
   grid-area: bott-ic3;
   background-color: rgb(233, 18, 186);
 }
+
+/* Responsive Settings  */
+
+@media screen and (max-width: 1265px) {
+  .layout {
+    grid-template:
+    "logo chan chan-sec top-ic1 top-ic2 top-ic3 search search top-ic4 top-ic5" 30px
+    "l-ic1 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic2 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic3 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic4 gen mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic5 gen mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic6 classes mchat mchat mchat mchat mchat mchat mchat mchat" 100px
+    "l-blank lobby mchat mchat mchat mchat mchat mchat mchat mchat" 50px
+    "l-blank staff mchat mchat mchat mchat mchat mchat mchat mchat" 125px
+    "l-blank user-info t-mess b-bott b-bott b-bott b-bott bott-ic1 bott-ic2 bott-ic3" 25px /
+    40px 90px 250px 25px 25px 40px 40px 40px 40px 40px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 721px) {
+  .layout {
+            grid-template:
+        "logo chan-sec top-ic1 top-ic2 top-ic3 search search top-ic4 top-ic5" 30px
+        "l-ic1 mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+        "l-ic2 mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+        "l-ic3 mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+        "l-ic4 mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+        "l-ic5 mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+        "l-ic6 mchat mchat mchat mchat mchat mchat mchat mchat" 100px
+        "l-blank mchat mchat mchat mchat mchat mchat mchat mchat" 50px
+        "l-blank mchat mchat mchat mchat mchat mchat mchat mchat" 125px
+        "l-blank t-mess b-bott b-bott b-bott b-bott bott-ic1 bott-ic2 bott-ic3" 25px /
+        40px 250px 25px 25px 40px 40px 40px 40px 40px;
+        gap: 10px;
+    }
+
+   }
+
+   @media screen and (max-width: 685px) {
+    .layout {
+              grid-template:
+          "mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+          "mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+          "mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+          "mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+          "mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+          "mchat mchat mchat mchat mchat mchat mchat mchat" 100px
+          "mchat mchat mchat mchat mchat mchat mchat mchat" 50px
+          "mchat mchat mchat mchat mchat mchat mchat mchat" 125px
+           /
+          40px 250px 25px 25px 40px 40px 40px 40px;
+          gap: 10px;
+    }
