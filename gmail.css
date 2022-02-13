@@ -18,7 +18,7 @@ body {
   display: grid;
   grid-template:
     "logo search-mail icons" 50px
-    "compose-etc emails quick-settings" 1fr
+    "compose-etc emails quick-settings" 300px    
     "meet emails quick-settings" 50px
     "chat emails quick-settings" 50px /
     120px 1fr 150px;
