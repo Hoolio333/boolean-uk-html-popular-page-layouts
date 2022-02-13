@@ -71,3 +71,39 @@ body {
   grid-area: chat;
   background-color: rgb(255, 157, 0);
 }
+
+@media screen and (max-width: 1150px) {
+  .layout {
+    grid-template:
+    "logo search-mail icons" 50px
+    "compose-etc emails quick-settings" 300px
+    "meet emails quick-settings" 50px
+    "chat emails quick-settings" 50px /
+    120px 1fr 150px;
+  gap: 10px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .layout {
+    grid-template:
+    "logo search-mail" 50px
+    "compose-etc emails" 300px
+    "meet emails" 50px
+    "chat emails" 50px /
+    120px 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 750px) {
+  .layout {
+    grid-template:
+    "search-mail" 50px
+    "emails" 300px
+    "emails" 50px
+    "emails" 50px /
+     1fr;
+  gap: 10px;
+  margin: 10px;
+}
