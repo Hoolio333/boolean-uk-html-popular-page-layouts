@@ -3,17 +3,18 @@
 * {
   box-sizing: border-box;
   padding: 0px;
+  text-align: center;
+  justify-content: center;
 }
 
 body {
   min-height: 400vh;
-  min-width: 200vh;
 }
 
 .layout {
   display: grid;
   grid-template:
-    "side-ic chan chan-se top-ic1 top-ic2 top-ic3 search search top-ic4 top-ic5" 25px
+    "logo chan chan-sec top-ic1 top-ic2 top-ic3 search search top-ic4 top-ic5" 30px
     "l-ic1 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
     "l-ic2 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
     "l-ic3 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
@@ -23,11 +24,12 @@ body {
     "l-blank lobby mchat mchat mchat mchat mchat mchat mchat mchat" 50px
     "l-blank staff mchat mchat mchat mchat mchat mchat mchat mchat" 125px
     "l-blank user-info t-mess b-bott b-bott b-bott b-bott bott-ic1 bott-ic2 bott-ic3" 25px /
-    30px 90px 250px 25px 25px 25px 30px 30px 25px 25px;
+    40px 90px 250px 25px 25px 40px 40px 40px 40px 40px;
+  gap: 10px;
 }
 
-.side-ic {
-  grid-area: side-ic;
+.logo {
+  grid-area: logo;
   background-color: aqua;
 }
 
@@ -73,7 +75,7 @@ body {
 
 .l-ic1 {
   grid-area: l-ic1;
-  background-color: rgb(26, 48, 58);
+  background-color: rgb(31, 150, 206);
 }
 
 .l-ic2 {
@@ -112,7 +114,7 @@ body {
 
 .inv-ppl {
   grid-area: inv-ppl;
-  background-color: rgb(5, 13, 87);
+  background-color: rgb(87, 204, 41);
 }
 
 .gen {
@@ -130,9 +132,14 @@ body {
   background-color: rgb(6, 59, 61);
 }
 
-.User-info {
-  grid-area: User-info;
-  background-color: rgb(29, 95, 40);
+.staff {
+  grid-area: staff;
+  background-color: chocolate;
+}
+
+.user-info {
+  grid-area: user-info;
+  background-color: rgb(142, 223, 155);
 }
 
 .t-mess {
@@ -142,20 +149,20 @@ body {
 
 .b-bott {
   grid-area: b-bott;
-  background-color: rgb(29, 95, 40);
+  background-color: rgb(106, 61, 230);
 }
 
 .bott-ic1 {
   grid-area: bott-ic1;
-  background-color: rgb(29, 95, 40);
+  background-color: rgb(35, 192, 171);
 }
 
 .bott-ic2 {
   grid-area: bott-ic2;
-  background-color: rgb(29, 95, 40);
+  background-color: rgb(211, 214, 29);
 }
 
 .bott-ic3 {
   grid-area: bott-ic3;
-  background-color: rgb(29, 95, 40);
+  background-color: rgb(233, 18, 186);
 }

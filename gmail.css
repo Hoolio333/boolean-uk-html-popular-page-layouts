@@ -22,8 +22,8 @@ body {
     "meet emails quick-settings" 50px
     "chat emails quick-settings" 50px /
     120px 1fr 150px;
-    gap: 10px;
-    margin: 10px;
+  gap: 10px;
+  margin: 10px;
 }
 
 .logo {
