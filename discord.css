@@ -1,0 +1,161 @@
+/* Reset  */
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  min-height: 400vh;
+  min-width: 200vh;
+}
+
+.layout {
+  display: grid;
+  grid-template:
+    "side-ic chan chan-se top-ic1 top-ic2 top-ic3 search search top-ic4 top-ic5" 25px
+    "l-ic1 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic2 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic3 inv-ppl mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic4 gen mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic5 gen mchat mchat mchat mchat mchat mchat mchat mchat" 25px
+    "l-ic6 classes mchat mchat mchat mchat mchat mchat mchat mchat" 100px
+    "l-blank lobby mchat mchat mchat mchat mchat mchat mchat mchat" 50px
+    "l-blank staff mchat mchat mchat mchat mchat mchat mchat mchat" 125px
+    "l-blank user-info t-mess b-bott b-bott b-bott b-bott bott-ic1 bott-ic2 bott-ic3" 25px /
+    30px 90px 250px 25px 25px 25px 30px 30px 25px 25px;
+}
+
+.side-ic {
+  grid-area: side-ic;
+  background-color: aqua;
+}
+
+.chan {
+  grid-area: chan;
+  background-color: rgb(68, 0, 255);
+}
+
+.chan-sec {
+  grid-area: chan-sec;
+  background-color: rgb(255, 115, 0);
+}
+
+.top-ic1 {
+  grid-area: top-ic1;
+  background-color: rgb(255, 0, 0);
+}
+
+.top-ic2 {
+  grid-area: top-ic2;
+  background-color: rgb(0, 255, 42);
+}
+
+.top-ic3 {
+  grid-area: top-ic3;
+  background-color: rgb(166, 255, 0);
+}
+
+.search {
+  grid-area: search;
+  background-color: rgb(255, 0, 242);
+}
+
+.top-ic4 {
+  grid-area: top-ic4;
+  background-color: rgb(174, 0, 255);
+}
+
+.top-ic5 {
+  grid-area: top-ic5;
+  background-color: rgb(0, 174, 255);
+}
+
+.l-ic1 {
+  grid-area: l-ic1;
+  background-color: rgb(26, 48, 58);
+}
+
+.l-ic2 {
+  grid-area: l-ic2;
+  background-color: rgb(49, 97, 49);
+}
+
+.l-ic3 {
+  grid-area: l-ic3;
+  background-color: rgb(38, 139, 69);
+}
+
+.l-ic4 {
+  grid-area: l-ic4;
+  background-color: rgb(219, 66, 61);
+}
+
+.l-ic5 {
+  grid-area: l-ic5;
+  background-color: rgb(97, 52, 139);
+}
+
+.l-ic6 {
+  grid-area: l-ic5;
+  background-color: rgb(190, 137, 50);
+}
+
+.l-blank {
+  grid-area: l-blank;
+  background-color: rgb(243, 99, 224);
+}
+.mchat {
+  grid-area: mchat;
+  background-color: rgb(88, 15, 6);
+}
+
+.inv-ppl {
+  grid-area: inv-ppl;
+  background-color: rgb(5, 13, 87);
+}
+
+.gen {
+  grid-area: gen;
+  background-color: rgb(179, 113, 113);
+}
+
+.classes {
+  grid-area: classes;
+  background-color: rgb(32, 2, 51);
+}
+
+.lobby {
+  grid-area: lobby;
+  background-color: rgb(6, 59, 61);
+}
+
+.User-info {
+  grid-area: User-info;
+  background-color: rgb(29, 95, 40);
+}
+
+.t-mess {
+  grid-area: t-mess;
+  background-color: rgb(29, 95, 40);
+}
+
+.b-bott {
+  grid-area: b-bott;
+  background-color: rgb(29, 95, 40);
+}
+
+.bott-ic1 {
+  grid-area: bott-ic1;
+  background-color: rgb(29, 95, 40);
+}
+
+.bott-ic2 {
+  grid-area: bott-ic2;
+  background-color: rgb(29, 95, 40);
+}
+
+.bott-ic3 {
+  grid-area: bott-ic3;
+  background-color: rgb(29, 95, 40);
+}
