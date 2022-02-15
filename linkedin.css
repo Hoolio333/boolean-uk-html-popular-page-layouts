@@ -13,6 +13,30 @@ body > * {
 border: 2px dashed green;
 }
 
+.main-layout {
+  display: grid;
+  grid-template:
+    "header header header header header" auto
+    ". user-info feed resources ." 1fr /
+    1fr 1fr 2fr 1fr 1fr;
+}
+
+.main-header {
+  grid-area: header;
+}
+
+.user-info {
+  grid-area: user-info;
+}
+
+.feed {
+  grid-area: feed;
+}
+
+.resources {
+  grid-area: resources;
+}
+
 .center-grid > * {
   padding: 2px;
   margin: 2px;
@@ -70,6 +94,7 @@ border: 2px dashed green;
 .logo {
   width: 54px;
   height: 54px;
+  background-color: blueviolet;
 }
 
 .icons-list {
@@ -85,373 +110,65 @@ border: 2px dashed green;
   border: 2px dashed orange;
 }
 
-
-
-/* Previous Code 2 */
-
-/* header {
+.two-row-grid {
   display: grid;
-  grid-template:  "in search nothing icons" auto
-                  "name message message message linkedin" auto 
-                  "pages feed feed feed most-v" auto
-                  "groups ad ad add-f" auto 
+  grid-template-columns: auto 1fr auto;
+  /* grid-auto-flow: row; */
+  min-height: 50px;
 }
 
-body  {
-  margin: 0;
-  min-height: 100vh;
-  }  */
-
-
-/* header  */
-
-/* header {
+.main-rows {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 5fr;
-  
+  grid-template-rows: auto;
 }
 
-header li {
-  display: inline;
+.top-main {
+  background-color: rgb(214, 132, 73);
 }
 
-header li .in {
-  grid-area: in;
-  background-color: rgb(133, 59, 102);
-  }
-
-header li .search {
-  grid-area: search;
-background-color: aqua;
+.bottom-main {
+  background-color: rgb(180, 96, 166);
 }
 
-header li .nothing {
-  grid-area: nothing;
-  background-color: rgb(255, 0, 140);
-  }
-
-header .icons {
-  grid-area: icons;
-  display: inline;
-  justify-content: right;
-  gap: 5px;
+.bm1 {
+  background-color: chartreuse;
 }
 
-header li .icon1 {
-  grid-area: icon1;
-background-color: rgb(136, 255, 0);
- }
-
-header li .icon2 {
-  grid-area: icon2;
-background-color: rgb(255, 0, 0);
+.bm1 {
+  background-color: rgb(167, 49, 118);
 }
 
-header li .icon3 {
-  grid-area: icon3;
-background-color: rgb(4, 0, 255);
+.bm1 {
+  background-color: rgb(84, 86, 197);
 }
 
-header li .icon4 {
-  grid-area: icon4;
-  background-color: darkkhaki;
-}
-
-header li .icon5 {
-  grid-area: icon5;
-background-color: rgb(255, 230, 0);
-}
-
-header li .icon6 {
-  grid-area: icon6;
-background-color: rgb(174, 0, 255);
-}
-
-header li .icon7 {
-  grid-area: icon7;
-background-color: rgb(92, 101, 189);
-}
-
-header li .icon8 {
-  grid-area: icon8;
-background-color: rgb(129, 52, 52);
-}
-
-header li a {
-  text-decoration: none;
-  color:white; */
-} 
-
-/* main  */
-
-/* main .name .message .linkedin .pages .feed .most-v {
-  display: inline-block;
-}
-
-.name {
-  background-color: rgb(55, 105, 105);
-}
-
-.message {
-  background-color: rgb(158, 90, 236);
-}
-
-.linkedin {
-  background-color: rgb(115, 206, 112);
-} 
-
-.pages {
-  background-color: rgb(224, 84, 107);
-} 
-
-.feed {
-  background-color: rgb(110, 219, 143);
-} 
-
-.most-v {
-  background-color: rgb(104, 23, 23);
-} */
-
-/* Footer  */
-
-/* .groups {
-  background-color: rgb(247, 210, 91);
-}
-
-.ad {
-  background-color: rgb(162, 103, 202);
-}
-
-.add-f {
-  background-color: rgb(212, 69, 177);
-} */
-
-/* Previous code 1 */
-
-/* body > * {
-display: inline;
-padding: 0;
-  margin: 0;
-} */
-
-/* body {
-  min-height: 400vh;
-  min-width: 1100px;
-  text-align: center;
-  /* display: inline-block; */
-/* }
-
-header {
+.three-row-grid {
   display: grid;
-  grid-template-columns: auto 1fr 1fr 5fr;
-  min
+  grid-auto-flow: row;
+  min-height: 50px;
 }
 
-header li {
-  display: inline;
+.top-l-aside {
+  background-color: rgb(186, 209, 82);
 }
 
-header li .in {
-  background-color: rgb(133, 59, 102);
-  }
-
-header li .search {
-background-color: aqua;
+.middle-l-aside {
+  background-color: rgb(83, 16, 83);
 }
 
-header li .nothing {
-  background-color: rgb(255, 0, 140);
-  }
-
-header .icons {
-  display: inline;
-  justify-content: right;
-  gap: 5px;
+.bottom-l-aside {
+  background-color: rgb(30, 187, 30);
 }
 
-header li .icon1 {
-background-color: rgb(136, 255, 0);
- }
-
-header li .icon2 {
-background-color: rgb(255, 0, 0);
+.top-r-aside {
+  background-color: rgb(186, 209, 82);
 }
 
-header li .icon3 {
-background-color: rgb(4, 0, 255);
+.middle-r-aside {
+  background-color: rgb(83, 16, 83);
 }
 
-header li .icon4 {
-  background-color: darkkhaki;
+.bottom-r-aside {
+  background-color: rgb(30, 187, 30);
 }
-
-header li .icon5 {
-background-color: rgb(255, 230, 0);
-}
-
-header li .icon6 {
-background-color: rgb(174, 0, 255);
-}
-
-header li .icon7 {
-background-color: rgb(92, 101, 189);
-}
-
-header li .icon8 {
-background-color: rgb(129, 52, 52);
-}
-
-header li a {
-  text-decoration: none;
-  color:white;
-}  */
-
-
-/* top-bar.top-bar {
-  display: grid;
-  grid-template-columns:  auto 1.5fr 1.5fr 5fr;
-  height: 25px;
-  gap: 5px;
-  } 
-  
-  .top-bar .icons nav {
-  display: grid;
-  align-content: center;
-  justify-content: right;
-}
-
-.top-bar .icons ul {
-  list-style: none;
-  display: grid;
-  grid-gap: 5px;
-}
-
-.top-bar .icons li {
-  display: inline;
-}
-
-.top-bar a {
-  text-decoration: none;
-}
-
-/* .layout {
-  display: grid;
-  grid-template:
-    "in search . icons" 20px
-    "name message message linkedin" 40px
-    "pages feed feed most-v" 1fr
-    "groups ad ad add-feed" 50px /
-    50px 1fr 70px;
-  padding: 10px;
-  gap: 10px;
-} */
-
-/* Header  */
-
-/* .in {
-  display: grid;
-  background-color: aqua;
-  margin-left: 25px;
-}
-
-.search {
-  display: grid;
-  background-color: rgb(47, 0, 255);
-}
-.nothing {
-  display: grid;
-  background-color: beige;
-}
-
-.icons {
-  display: grid;
-  background-color: rgb(255, 0, 0);
-  list-style: none;
-} */
-
-/* Main  */
-
-/* .name {
-  grid-area: name;
-  background-color: rgb(217, 255, 0);
-}
-
-.message {
-  grid-area: message;
-  background-color: rgb(225, 0, 255);
-}
-
-.linkedin {
-  grid-area: linkedin;
-  background-color: rgb(9, 255, 0);
-}
-
-.pages {
-  grid-area: pages;
-  background-color: rgb(255, 0, 191);
-}
-
-.feed {
-  grid-area: feed;
-  background-color: rgb(192, 166, 20);
-}
-
-.most-v {
-  grid-area: most-v;
-  background-color: rgb(60, 36, 141);
-}
-
-.groups {
-  grid-area: groups;
-  background-color: rgb(29, 107, 36);
-}
-
-.add-feed {
-  grid-area: add-feed;
-  background-color: rgb(95, 12, 16);
-}
-
-/* Footer  */
-
-/* .ad {
-  grid-area: ad;
-  background-color: rgb(61, 199, 103);
-}  */
-
-/* Responsiveness  */
-/* 
-@media screen and (max-width: 1150px) {
-  .layout {
-    grid-template:
-      "in search icons" 20px
-      "name message linkedin" 40px
-      "pages feed most-v" 1fr
-      "groups ad add-feed" 50px /
-      50px 1fr 70px;
-    padding: 10px;
-    gap: 10px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .layout {
-    grid-template:
-      "in search" 20px
-      "name message" 40px
-      "pages feed" 1fr /
-      50px 1fr;
-    padding: 10px;
-    gap: 10px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .layout {
-    grid-template:
-      "search" 20px
-      "message" 40px /
-      1fr;
-    padding: 10px;
-    gap: 10px;
-  }
 
