@@ -177,14 +177,39 @@ body > * {
   border: 2px dashed rgb(134, 33, 126);
 }
 
+/* STUCK! */
+
+.three-row-grid > * {
+  padding: 2px;
+  margin: 2px;
+  height: 32px;
+  border: 2px dashed rgb(75, 170, 199);
+}
+
 .three-row-grid {
   display: grid;
   grid-auto-flow: row;
   min-height: 50px;
 }
 
+/* STUCK!  */
+
+.top-r-aside {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 5px;
+  padding: 4px;
+  margin: 4px;
+
+  border: 2px dashed rgb(129, 81, 218);
+}
+
 .top-l-aside {
-  background-color: rgb(186, 209, 82);
+  display: grid;
+  padding: 4px;
+  margin: 4px;
+
+  border: 2px dashed rgb(186, 209, 82);
 }
 
 .middle-l-aside {
@@ -193,10 +218,6 @@ body > * {
 
 .bottom-l-aside {
   background-color: rgb(30, 187, 30);
-}
-
-.top-r-aside {
-  background-color: rgb(186, 209, 82);
 }
 
 .middle-r-aside {
